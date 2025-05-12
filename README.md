@@ -11,18 +11,22 @@ This folder contains my Java exercises from Workbook 5.
 - Defines and uses the following classes:
   - `Vehicle` – parent class containing shared properties like color, fuel capacity, and passenger info
   - `Moped`, `Car`, `SemiTruck`, `Hovercraft` – child classes that extend `Vehicle`
-- Set up all vehicle types without constructors (to be added in the next exercise)
-- Used setters to assign values to each vehicle object and printed outputs to test them
+- Used setters in the first exercise to assign values and test object behavior in a `main()` method
+- Added constructors to all classes:
+  - `Vehicle` constructor accepts color, number of passengers, cargo capacity, and fuel capacity
+  - Each child class uses `super()` to call the parent constructor and pass the correct values
 - Great practice for:
   - Designing inheritance hierarchies
-  - Using setters/getters to manage encapsulated fields
-  - Understanding how subclass objects inherit behavior from a parent class
-  - Practicing object creation and testing in `main()`
+  - Using setters and constructors to initialize object data
+  - Understanding how and why to use `super()` in subclass constructors
+  - Testing constructor logic in a structured `main()` method
 
 ---
 
 ## ✨ What I Learned
 - How to design reusable class structures using inheritance  
 - How to store shared properties in a superclass and extend them in child classes  
-- How subclasses can use methods from their parent even if the parent wasn’t directly instantiated  
-- How to build and test multiple object types with shared behavior  
+- How subclasses can use methods and constructors from their parent  
+- How to properly use `super()` to initialize inherited fields  
+- How to test object creation and output using constructors instead of setters  
+
