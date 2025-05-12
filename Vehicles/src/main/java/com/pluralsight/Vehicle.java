@@ -12,6 +12,20 @@ public class Vehicle {
     private int weight;
     private int maxSpeed;
 
+    // Constructor
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, int currentSpeed, int acceleration, int brakingPower, int turningRadius, int weight, int maxSpeed) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.currentSpeed = currentSpeed;
+        this.acceleration = acceleration;
+        this.brakingPower = brakingPower;
+        this.turningRadius = turningRadius;
+        this.weight = weight;
+        this.maxSpeed = maxSpeed;
+    }
+
     // Getters and Setters
     public String getColor() {
         return color;
