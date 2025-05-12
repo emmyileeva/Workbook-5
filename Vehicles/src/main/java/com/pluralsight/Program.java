@@ -7,30 +7,53 @@ public class Program {
         slowRide.setFuelCapacity(5);
         slowRide.setCargoCapacity(15);
         slowRide.setNumberOfPassengers(1);
+        slowRide.setCurrentSpeed(0);
+        slowRide.setAcceleration(5);
+        slowRide.setBrakingPower(2);
+        slowRide.setTurningRadius(2);
+        slowRide.setWeight(200);
+        slowRide.setMaxSpeed(30);
 
         Car dailyDriver = new Car();
         dailyDriver.setColor("Blue");
         dailyDriver.setFuelCapacity(12);
         dailyDriver.setCargoCapacity(25);
         dailyDriver.setNumberOfPassengers(4);
+        dailyDriver.setCurrentSpeed(0);
+        dailyDriver.setAcceleration(10);
+        dailyDriver.setBrakingPower(5);
+        dailyDriver.setTurningRadius(5);
+        dailyDriver.setWeight(1500);
+        dailyDriver.setMaxSpeed(120);
 
         SemiTruck bigRig = new SemiTruck();
         bigRig.setColor("Black");
         bigRig.setFuelCapacity(100);
         bigRig.setCargoCapacity(1000);
         bigRig.setNumberOfPassengers(2);
+        bigRig.setCurrentSpeed(0);
+        bigRig.setAcceleration(5);
+        bigRig.setBrakingPower(10);
+        bigRig.setTurningRadius(20);
+        bigRig.setWeight(8000);
+        bigRig.setMaxSpeed(80);
 
         Hovercraft hover = new Hovercraft();
         hover.setColor("Green");
         hover.setFuelCapacity(50);
         hover.setCargoCapacity(200);
         hover.setNumberOfPassengers(6);
+        hover.setCurrentSpeed(0);
+        hover.setAcceleration(15);
+        hover.setBrakingPower(8);
+        hover.setTurningRadius(10);
+        hover.setWeight(3000);
+        hover.setMaxSpeed(60);
 
-        System.out.println("Vehicle Details:");
-        System.out.println("Moped: " + slowRide.getColor() + ", Fuel Capacity: " + slowRide.getFuelCapacity() + ", Cargo Capacity: " + slowRide.getCargoCapacity() + ", Passengers: " + slowRide.getNumberOfPassengers());
-        System.out.println("Car: " + dailyDriver.getColor() + ", Fuel Capacity: " + dailyDriver.getFuelCapacity() + ", Cargo Capacity: " + dailyDriver.getCargoCapacity() + ", Passengers: " + dailyDriver.getNumberOfPassengers());
-        System.out.println("SemiTruck: " + bigRig.getColor() + ", Fuel Capacity: " + bigRig.getFuelCapacity() + ", Cargo Capacity: " + bigRig.getCargoCapacity() + ", Passengers: " + bigRig.getNumberOfPassengers());
-        System.out.println("Hovercraft: " + hover.getColor() + ", Fuel Capacity: " + hover.getFuelCapacity() + ", Cargo Capacity: " + hover.getCargoCapacity() + ", Passengers: " + hover.getNumberOfPassengers());
+        System.out.println("Moped Color: " + slowRide.getColor());
+        System.out.println("Car Color: " + dailyDriver.getColor());
+        System.out.println("SemiTruck Color: " + bigRig.getColor());
+        System.out.println("Hovercraft Color: " + hover.getColor());
     }
 }
 
