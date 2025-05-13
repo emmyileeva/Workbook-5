@@ -20,6 +20,19 @@ This folder contains my Java exercises from Workbook 5.
   - Using setters and constructors to initialize object data
   - Understanding how and why to use `super()` in subclass constructors
   - Testing constructor logic in a structured `main()` method
+ 
+### ✅ AssetManager
+- Simulates an asset tracking system with polymorphic behavior
+- Defines a superclass `Asset` and two subclasses:
+  - `House` – calculates value based on condition, square footage, and lot size
+  - `Vehicle` – calculates value based on age, depreciation rules, and odometer
+- In `main()`, an `ArrayList<Asset>` stores a mix of houses and vehicles
+- Uses `instanceof` and downcasting to access subclass-specific data like address or make/model
+- Great practice for:
+  - Overriding methods with custom logic (`getValue()`)
+  - Using polymorphism and casting to process mixed-type collections
+  - Applying real-world logic to depreciation and asset evaluation
+  - Organizing and outputting object data clearly using inheritance
 
 ---
 
