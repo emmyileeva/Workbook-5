@@ -34,6 +34,18 @@ This folder contains my Java exercises from Workbook 5.
   - Applying real-world logic to depreciation and asset evaluation
   - Organizing and outputting object data clearly using inheritance
 
+### ✅ AbstractAssets
+- Refactors the previous `AssetManager` project to demonstrate abstraction
+- Changes the `Asset` class to an `abstract class` and makes `getValue()` an `abstract method`
+- Subclasses (`House`, `Vehicle`) now override `getValue()` with their own logic
+- Adds a new subclass `Cash`, which returns its original value with no change
+- Includes polymorphic display logic in `main()` using `instanceof` and downcasting
+- Great practice for:
+  - Understanding and applying `abstract` classes and methods
+  - Enforcing that all assets implement a value calculation
+  - Writing clean subclass implementations
+  - Demonstrating how abstract classes prevent direct instantiation
+
 ---
 
 ## ✨ What I Learned
